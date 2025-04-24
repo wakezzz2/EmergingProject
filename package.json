@@ -1,0 +1,17 @@
+{
+  "name": "emerging-project",
+  "version": "1.0.0",
+  "description": "AdobePeak Real Estate Website",
+  "main": "EmergingProject.html",
+  "scripts": {
+    "start": "serve . -p 3001 --single"
+  },
+  "dependencies": {
+    "aos": "^2.3.1",
+    "chart.js": "^4.4.1",
+    "framer-motion": "^11.0.3",
+    "leaflet": "^1.9.4",
+    "tailwindcss": "^3.4.1",
+    "serve": "^14.2.1"
+  }
+} 
