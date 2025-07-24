@@ -595,10 +595,10 @@
         padding: 16px;
     }
     .save-btn.active svg {
-        fill: #EF4444;
+        fill: #3B82F6;
     }
     .save-btn.active {
-        animation: heartBurst 0.3s ease;
+        animation: bookmarkPop 0.3s ease;
     }
     h1, h2, h3 {
         color: var(--text-color);
@@ -1399,8 +1399,8 @@
     }
     
     .save-btn:hover svg, .save-btn.active svg {
-        fill: #EF4444;
-        stroke: #EF4444;
+        fill: #3B82F6;
+        stroke: #3B82F6;
     }
     
     .favorite-tooltip {
@@ -1451,7 +1451,7 @@
                 <a href="#about" class="nav-link">About</a>
                 <a href="#contact" class="nav-link">Contact</a>
                 <a href="#agent" class="nav-link">Agent</a>
-                <a href="#favorites" id="favoritesLink" class="nav-link hidden">Favorites</a>
+                <a href="#bookmarks" id="favoritesLink" class="nav-link hidden">Bookmarks</a>
         </div>
         <div class="nav-actions flex items-center">
                 <button id="themeToggle" class="theme-toggle mr-4" title="Toggle Theme">
@@ -1894,10 +1894,10 @@
                     </div>
                     <div class="p-6 bg-white dark:bg-gray-800 relative">
                         <button class="save-btn absolute top-4 right-4 bg-white dark:bg-gray-700 rounded-full p-2 shadow-md hover:shadow-lg transition-shadow group" data-id="1">
-                            <svg class="w-6 h-6 text-gray-400 group-hover:text-red-500 transition-colors duration-300 fill-current" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            <svg class="w-6 h-6 text-gray-400 group-hover:text-blue-500 transition-colors duration-300 fill-current" viewBox="0 0 24 24">
+                                <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
                             </svg>
-                            <span class="favorite-tooltip absolute -bottom-8 right-0 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Add to Favorites</span>
+                            <span class="favorite-tooltip absolute -bottom-8 right-0 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Add to Bookmarks</span>
                     </button>
                         <div class="mb-1">
                             <span class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold">₱750,000</span>
@@ -1938,10 +1938,10 @@
                     </div>
                     <div class="p-6 bg-white dark:bg-gray-800 relative">
                         <button class="save-btn absolute top-4 right-4 bg-white dark:bg-gray-700 rounded-full p-2 shadow-md hover:shadow-lg transition-shadow group" data-id="2">
-                            <svg class="w-6 h-6 text-gray-400 group-hover:text-red-500 transition-colors duration-300 fill-current" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            <svg class="w-6 h-6 text-gray-400 group-hover:text-blue-500 transition-colors duration-300 fill-current" viewBox="0 0 24 24">
+                                <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
                             </svg>
-                            <span class="favorite-tooltip absolute -bottom-8 right-0 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Add to Favorites</span>
+                            <span class="favorite-tooltip absolute -bottom-8 right-0 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Add to Bookmarks</span>
                     </button>
                         <div class="mb-1">
                             <span class="inline-block bg-rose-100 text-rose-800 text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold">₱395,000</span>
@@ -2024,10 +2024,10 @@
                     </div>
                     <div class="p-6 bg-white dark:bg-gray-800 relative">
                         <button class="save-btn absolute top-4 right-4 bg-white dark:bg-gray-700 rounded-full p-2 shadow-md hover:shadow-lg transition-shadow group" data-id="3">
-                            <svg class="w-6 h-6 text-gray-400 group-hover:text-red-500 transition-colors duration-300 fill-current" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            <svg class="w-6 h-6 text-gray-400 group-hover:text-blue-500 transition-colors duration-300 fill-current" viewBox="0 0 24 24">
+                                <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
                             </svg>
-                            <span class="favorite-tooltip absolute -bottom-8 right-0 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Add to Favorites</span>
+                            <span class="favorite-tooltip absolute -bottom-8 right-0 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Add to Bookmarks</span>
                     </button>
                         <div class="mb-1">
                             <span class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold">₱625,000</span>
@@ -2112,10 +2112,10 @@
                     </div>
                     <div class="p-6 bg-white dark:bg-gray-800 relative">
                         <button class="save-btn absolute top-4 right-4 bg-white dark:bg-gray-700 rounded-full p-2 shadow-md hover:shadow-lg transition-shadow group" data-id="7">
-                            <svg class="w-6 h-6 text-gray-400 group-hover:text-red-500 transition-colors duration-300 fill-current" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            <svg class="w-6 h-6 text-gray-400 group-hover:text-blue-500 transition-colors duration-300 fill-current" viewBox="0 0 24 24">
+                                <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
                             </svg>
-                            <span class="favorite-tooltip absolute -bottom-8 right-0 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Add to Favorites</span>
+                            <span class="favorite-tooltip absolute -bottom-8 right-0 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Add to Bookmarks</span>
                     </button>
                         <div class="mb-1">
                             <span class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold">₱895,000</span>
@@ -2200,10 +2200,10 @@
                     </div>
                     <div class="p-6 bg-white dark:bg-gray-800 relative">
                         <button class="save-btn absolute top-4 right-4 bg-white dark:bg-gray-700 rounded-full p-2 shadow-md hover:shadow-lg transition-shadow group" data-id="8">
-                            <svg class="w-6 h-6 text-gray-400 group-hover:text-red-500 transition-colors duration-300 fill-current" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            <svg class="w-6 h-6 text-gray-400 group-hover:text-blue-500 transition-colors duration-300 fill-current" viewBox="0 0 24 24">
+                                <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
                             </svg>
-                            <span class="favorite-tooltip absolute -bottom-8 right-0 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Add to Favorites</span>
+                            <span class="favorite-tooltip absolute -bottom-8 right-0 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Add to Bookmarks</span>
                         </button>
                         <div class="mb-1">
                             <span class="inline-block bg-teal-100 text-teal-800 text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold">₱475,000</span>
@@ -2288,10 +2288,10 @@
                     </div>
                     <div class="p-6 bg-white dark:bg-gray-800 relative">
                         <button class="save-btn absolute top-4 right-4 bg-white dark:bg-gray-700 rounded-full p-2 shadow-md hover:shadow-lg transition-shadow group" data-id="9">
-                            <svg class="w-6 h-6 text-gray-400 group-hover:text-red-500 transition-colors duration-300 fill-current" viewBox="0 0 24 24">
-                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            <svg class="w-6 h-6 text-gray-400 group-hover:text-blue-500 transition-colors duration-300 fill-current" viewBox="0 0 24 24">
+                                <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
                             </svg>
-                            <span class="favorite-tooltip absolute -bottom-8 right-0 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Add to Favorites</span>
+                            <span class="favorite-tooltip absolute -bottom-8 right-0 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Add to Bookmarks</span>
                         </button>
                         <div class="mb-1">
                             <span class="inline-block bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full uppercase tracking-wide font-semibold">₱925,000</span>
@@ -3607,10 +3607,10 @@
             const tooltip = btn.querySelector('.favorite-tooltip');
             if (favorites.includes(id)) {
                 favorites = favorites.filter(fav => fav !== id);
-                    if (tooltip) tooltip.textContent = 'Removed from Favorites!';
+                    if (tooltip) tooltip.textContent = 'Removed from Bookmarks!';
             } else {
                 favorites.push(id);
-                    if (tooltip) tooltip.textContent = 'Added to Favorites!';
+                    if (tooltip) tooltip.textContent = 'Added to Bookmarks!';
             }
                 
                 if (tooltip) {
@@ -3940,10 +3940,10 @@
 </div>
 </div>
 
-<!-- Favorites Modal -->
+<!-- Bookmarks Modal -->
 <div id="favoritesModal" class="modal-overlay fixed inset-0 bg-black bg-opacity-50 hidden z-50">
 <div class="modal-content p-8 rounded-xl shadow-2xl w-full max-w-4xl modal-glassmorphic">
-    <h2 class="text-3xl font-bold mb-6" style="font-family: 'Playfair Display', serif;">My Favorites</h2>
+    <h2 class="text-3xl font-bold mb-6" style="font-family: 'Playfair Display', serif;">My Bookmarks</h2>
     <div id="favoritesGrid" class="grid grid-cols-1 md:grid-cols-3 gap-10"></div>
 </div>
 </div>
@@ -4180,14 +4180,14 @@ propertyThumbnails.forEach((thumbnail) => {
 if (savePropertyBtn) {
     savePropertyBtn.addEventListener('click', function() {
         this.classList.toggle('bg-gray-700');
-        this.classList.toggle('bg-pink-600');
+        this.classList.toggle('bg-blue-600');
         const heartIcon = this.querySelector('svg');
         heartIcon.classList.toggle('text-gray-300');
         heartIcon.classList.toggle('text-white');
         
         // Optional: Show a saved/unsaved message
         const isSaved = this.classList.contains('bg-pink-600');
-        alert(isSaved ? 'Property saved to favorites!' : 'Property removed from favorites!');
+        alert(isSaved ? 'Property saved to bookmarks!' : 'Property removed from bookmarks!');
     });
 }
 });
@@ -4230,7 +4230,7 @@ if (savePropertyBtn) {
                 </div>
                 <button class="save-property-btn bg-gray-700 text-gray-300 rounded-full p-2.5 flex items-center justify-center hover:bg-pink-600 transition-colors mt-8 mr-2">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        <path d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/>
                     </svg>
                 </button>
             </div>
